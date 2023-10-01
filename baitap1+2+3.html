@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap 1+2+3</title>
+</head>
+<body>
+    <div class="login">
+        <form name="form-login">
+            <h1>ĐĂNG KÝ</h1>
+
+            <label for="name">Tên</label>
+            <input type="text" id="name" placeholder="Username">
+
+            <label for="pw">Mật Khẩu<label>
+            <input type="password" id="pw" placeholder="Password">
+
+            <input id="rgstr_btn" type="submit" value="Lưu" onclick="store()">
+            <input 
+              id="delete_btn" 
+              type="submit" 
+              value="Xóa dữ liệu" 
+              onclick=
+                'localStorage.clear();
+                alert("Thông tin của bạn đã được xóa");'>
+            <input id="check_btn" type="submit" value="Kiểm tra dữ liệu" onclick="checkData()">
+        </form>
+    </div>
+<script src="baitap1+2+3.js"></script>
+</body>
+</html>
