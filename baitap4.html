@@ -14,9 +14,15 @@
     {
         const response = await fetch(link);
         const data = await response.json();
-
         
+        let img = document.createElement('img');
+        img.src = data[0].url;
+        document.body.appendChild(img);
+        img.style.height = "200px";
+        img.style.width = "200px"; 
     }
+
+fetchData();
 </script>
 </body>
 </html>
