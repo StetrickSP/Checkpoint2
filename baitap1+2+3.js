@@ -8,16 +8,17 @@ function store()
     alert('Thông tin của bạn đã được ghi lại!');
 }
 
-function checkData()
+const checkKey = document.getElementById('check_btn');
+
+checkKey.addEventListener('click', () => 
 {
-    var storedName = localStorage.getItem('name');
-    var storedPw = localStorange.getItem('pw');
-
-    if (localStorage == null)
-    {
-        alert('Khong co du lieu');
-
-    }else{alert('Co du lieu')}
+    if (localStorage.getItem('name') !== null) {
+      alert('Có dữ liệu: '+localStorage.getItem('name')+','+localStorage.getItem('pw'));
+    //   console.log(localStorage.getItem('website'));
+    } else {
+      alert('Không có dữ liệu');
+    }
 }
+)
 
 
