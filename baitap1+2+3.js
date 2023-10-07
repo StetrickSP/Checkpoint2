@@ -14,7 +14,6 @@ checkKey.addEventListener('click', () =>
 {
     if (localStorage.getItem('name') !== null) {
       alert('Có dữ liệu: '+localStorage.getItem('name')+','+localStorage.getItem('pw'));
-    //   console.log(localStorage.getItem('website'));
     } else {
       alert('Không có dữ liệu');
     }
